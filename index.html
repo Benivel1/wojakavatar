@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Wojak Obstacle Run</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="hud">
+      <div>
+        <h1>Wojak Obstacle Run</h1>
+        <p>Press <strong>Space</strong> or tap <strong>Jump</strong> to hop over obstacles.</p>
+      </div>
+      <div class="stats">
+        <div>Score: <span id="score">0</span></div>
+        <div>Best: <span id="best">0</span></div>
+      </div>
+    </div>
+    <div class="controls">
+      <button id="jump">Jump</button>
+      <button id="restart" class="secondary">Restart</button>
+    </div>
+    <div id="overlay" class="overlay">
+      <div class="panel">
+        <h2>Game Over</h2>
+        <p>Your score: <span id="final-score">0</span></p>
+        <button id="play-again">Play again</button>
+      </div>
+    </div>
+    <canvas id="game"></canvas>
+
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
